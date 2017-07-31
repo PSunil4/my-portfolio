@@ -1,0 +1,177 @@
+/* ----------------------------------------------- */
+/* BASIC SETUP */
+/* ----------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+/* ----------------------------------------------- */
+/* REUSABLE CODE */
+/* ----------------------------------------------- */
+
+.row { max-width: 1140px; margin: 0 auto; }
+
+section {
+    padding: 80px 0;
+}
+
+.box {
+    padding: 1%;
+}
+
+.icons {
+    font-size: 300%;
+    display: block;
+    color: #e67e22;
+    margin-bottom: 10px;
+}
+/* --- Headers ---- */
+h1, h2, h3 {
+    font-weight: 300;   
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 400%;
+    word-spacing: 4px;
+}
+
+h2 {
+    font-size: 200%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: "";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+/* ---- PARAGRAPHS ---- */
+.small-desc {
+    line-height: 145%;
+    width: 75%;
+    margin-left: 15%;
+}
+
+.box p {
+    font-size: 80%;
+    line-height: 145%;
+}
+
+/* ----------------------------------------------- */
+/* HEADER */
+/* ----------------------------------------------- */
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(css-img/yosemite-night.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.landing-text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.landing-text-box h3 {
+    font-size: 117%;
+    font-weight: 200;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+
+.logo {
+    height: 150px;
+    width: auto;
+    float: left;
+    margin-top: -30px;
+    margin-left: -40px;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.main-nav li {
+    display: inline;
+    margin-left: 40px; 
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 5px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #e67e22;
+}
+
+/* ----------------------------------------------- */
+/* Section */
+/* ----------------------------------------------- */
+
+.showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.showcase-pic {
+    width: 100%;
+    margin: 0;
+}
+
+.showcase img {
+    width: 100%;
+    height: auto;
+}
