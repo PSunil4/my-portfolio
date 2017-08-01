@@ -15,6 +15,14 @@ html {
     text-rendering: optimizeLegibility;
 }
 
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
 /* ----------------------------------------------- */
 /* REUSABLE CODE */
 /* ----------------------------------------------- */
@@ -35,6 +43,21 @@ section {
     color: #e67e22;
     margin-bottom: 10px;
 }
+
+.toolcon {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #e67e22;
+    font-size: 150%;
+    margin-right: 5px;
+
+    /* Align text and icons */
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -4px;
+}
+
 /* --- Headers ---- */
 h1, h2, h3 {
     font-weight: 300;   
@@ -81,6 +104,52 @@ h3 {
 .box p {
     font-size: 80%;
     line-height: 145%;
+}
+
+/* ------ Buttons -------- */
+.btn:link,
+.btn:visited,
+input[type=submit] {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 200px;
+  transition: background-color 0.50s, border 0.5s, color 0.5s;
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit] {
+  background-color: #e67e22;
+  border: 1px solid #e67e22;
+  color: #fff;
+  margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+  border: 1px solid #e67e22;
+  color: #e67e22;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #cf6d10;
+}
+
+.btn-full:hover,
+.btn-full:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+  border: 1px solid #e67e10;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active,
+input[type=submit] {
+  border: 1px solid #e67e22;
+  color: #fff;
 }
 
 /* ----------------------------------------------- */
@@ -152,8 +221,20 @@ header {
 }
 
 /* ----------------------------------------------- */
+/* About Me */
+/* ----------------------------------------------- */
+
+.section-aboutme .small-desc {
+    margin-bottom: 30px;
+}
+
+/* ----------------------------------------------- */
 /* Section */
 /* ----------------------------------------------- */
+
+.section-portfolio {
+    padding: 0;
+}
 
 .showcase {
     list-style: none;
@@ -169,9 +250,130 @@ header {
 .showcase-pic {
     width: 100%;
     margin: 0;
+    overflow: hidden;
+    background-color: #000; 
 }
 
 .showcase img {
+    opacity: 0.7;
     width: 100%;
     height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.showcase img:hover {
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+/* ----------------------------------------------- */
+/* Work Environment */
+/* ----------------------------------------------- */
+.box img {
+    width: 80%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.current-tools {
+    margin-bottom: 5px;
+    font-size: 80%;
+}
+
+/* ----------------------------------------------- */
+/* section-form */
+/* ----------------------------------------------- */
+
+.section-form {
+    background-color: #f4f4f4;
+}
+
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 100px;
+}
+
+/* ----------------------------------------------- */
+/* footer */
+/* ----------------------------------------------- */
+footer {
+    background-color: #333;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li, 
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child, 
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #ddd;
+}
+
+footer p {
+    color: #888;
+    text-align: center;
+    margin-top: 20px;
+}
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 170%;
+}
+
+.fa-github,
+.fa-linkedin-square {
+    transition: color 0.4s;
+}
+
+.fa-github:hover {
+    color: #6cc644;
+}
+.fa-linkedin-square:hover {
+    color: #007bb6;
+}
+
+.social-links {
+    margin-top: -10px;
 }

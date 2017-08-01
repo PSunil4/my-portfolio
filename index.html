@@ -9,6 +9,7 @@
 
         <link rel="stylesheet" type="text/css" href="resources/css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
+        <script src="https://use.fontawesome.com/e8653c4577.js"></script>
         <title> Sunil Panchal - About Me</title>
     </head>
     <body> 
@@ -19,8 +20,9 @@
                     <ul class="main-nav">
                         <li><a href="#"> Home </a></li>
                         <li><a href="#"> About Me </a></li>
-                        <li><a href="#"> Experience </a> </li>
-                        <li><a href="#"> Portfolio </a></li>
+                        <li><a href="#"> Portfolio </a> </li>
+                        <li><a href="#"> Dev-Tools </a> </li>
+                        <li><a href="#"> Contact </a></li>
                     </ul>
                 </div>
             </nav>
@@ -29,7 +31,7 @@
                 <h3> Software Engineer | Technology Enthusiast </h3>
             </div>
         </header>
-        <section>
+        <section class="section-aboutme">
             <div class="row">
                 <h2> About Me </h2>
                 <p class="small-desc">
@@ -69,8 +71,8 @@
                 </div>
             </div>
         </section>
-        <section class="section-portfolio">
-            <ul class="showcase">
+        <section class="section-portfolio ">
+            <ul class="showcase clearfix">
                 <li>
                     <figure class="showcase-pic">
                         <img src="resources/css/css-img/5069.jpg" alt="Comming Soon" /> 
@@ -92,7 +94,7 @@
                     </figure>
                 </li>
             </ul>
-            <ul class="showcase">
+            <ul class="showcase clearfix">
                 <li>
                     <figure class="showcase-pic">
                         <img src="resources/css/css-img/cs.jpg" alt="Comming Soon" /> 
@@ -116,5 +118,131 @@
             </ul>
         </section>
 
+        <section class="section-tools"> 
+            <div class="row"> 
+                <h2> Development Tools </h2>
+            </div>
+
+            <div class="row"> 
+                <div class="col span-1-of-4 box">
+                    <img src="resources/img/programming.png" alt="Programming Languages" >
+                    <h3> Languages </h3>
+                    <div class="current-tools">
+                        <i class="icon-java toolcon"></i> Java
+                    </div>
+                    <div class="current-tools">
+                        <i class="icon-html5 toolcon"></i> HTML5 + CSS3
+                    </div>
+                    <div class="current-tools">
+                        <i class="icon-javascript toolcon"></i> JavaScript
+                    </div>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <img src="resources/img/database.jpg" alt="List of Databases" >
+                    <h3> Databases </h3>
+                    <div class="current-tools">
+                        <i class="icon-mysql toolcon"></i> MySQL
+                    </div>
+                    <div class="current-tools">
+                        <i class="icon-postgres-alt toolcon"></i> PostgreSQL
+                    </div>
+                    <div class="current-tools">
+                        <i class="icon-mongodb toolcon"></i> MongoDB
+                    </div>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <img src="resources/img/extra.png" alt="Frameworks" >
+                    <h3> Frameworks </h3>
+                    <div class="current-tools">
+                        <i class="icon-angular-alt toolcon"></i> Angular 
+                    </div>
+                    <div class="current-tools">
+                        <i class="icon-spring toolcon"></i> Spring-MVC
+                    </div>
+                    <div class="current-tools">
+                        <i class="fa fa-map-o fa-lg toolcon" aria-hidden="true"></i> Hibernate
+                    </div>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <img src="resources/img/framework.png" alt="IDE" >
+                    <h3> IDE </h3>
+                    <div class="current-tools">
+                        <i class="icon-google-developers toolcon"></i> Eclipse 
+                    </div>
+                    <div class="current-tools">
+                        <i class="icon-shell toolcon"></i> Visual Studio Code
+                    </div>
+                    <div class="current-tools">
+                        <i class="icon-google-developers toolcon"></i>  Netbeans
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-form">
+            <div class="row">
+                <h2>Get In Touch!</h2>
+            </div>
+            <div class="row">
+                <form method="POST" action="resources/js/contact.php" class="contact-form" enctype="text/plain">
+                    <div class="row">
+                        <div class="col span-1-of-3"> 
+                            <label for="name"> Name </label>
+                        </div>
+                        <div class="col span-2-of-3"> 
+                            <input type="text" name="name" id="name" placeholder="Your Name" required/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3"> 
+                            <label for="email"> Email </label>
+                        </div>
+                        <div class="col span-2-of-3"> 
+                            <input type="email" name="email" id="email" placeholder="Your Email" required/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3"> 
+                            <label> Message </label>
+                        </div>
+                        <div class="col span-2-of-3"> 
+                            <textarea name="message" placeholder="Drop me a line" required></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3"> 
+                            <label> &nbsp; </label>
+                        </div>
+                        <div class="col span-2-of-3"> 
+                            <input type="submit" name="send" value="Send It"/>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <ul class="footer-nav">
+                        <li><a href="#"> Home </a></li>
+                        <li><a href="#"> About Me </a></li>
+                        <li><a href="#"> Portfolio </a> </li>
+                        <li><a href="#"> Dev-Tools </a> </li>
+                        <li><a href="#"> Contact </a></li>
+                    </ul>
+                </div>
+                <div class="col span-1-of-2">
+                    <ul class="social-links">
+                        <li><a href="https://github.com/PSunil4?tab=repositories" target="_blank"> <i class="fa fa-github" aria-hidden="true"></i> </a></li>
+                        <li><a href="https://www.linkedin.com/in/sunil-panchal/" target="_blank"> <i class="fa fa-linkedin-square" aria-hidden="true"></i> </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <p>
+                    Copyright &copy; 2017 by Sunil Panchal.
+                </p>
+            </div>
+        </footer>
     </body>
 </html>
